@@ -4,7 +4,7 @@ WITH customers as(
         first_name,
         last_name
 
-    FROM {{ source('jaffle_shop', 'customer') }}
+    FROM {{ source('jaffle_shop', 'customers') }}
 )
 
 SELECT * FROM customers
